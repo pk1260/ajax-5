@@ -1,0 +1,17 @@
+<html>
+<head lang="eng">
+    <title>hello</title>
+</head>
+</html>
+<body style="background-color: grey">
+<p><img src="http://ma-web.nl/static/vector/logo_blok.svg" width="30" alt="Logo">Ajax 5 MD1</p>
+<input type="text" id="searchCountry" placeholder="Zoek een land">
+<div id="txtHint">hier komt de lijst</div>
+<script>
+    searchCountry = document.getElementById('searchCountry');
+    searchCountry.addEventListener('keyup', function () {
+        showList(searchCountry.value, 'list');
+    })
+</script>
+<script src="js/ajax.js"></script>
+</body>
